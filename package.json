@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint . --fix",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "comp-gen": "node generate-component.js"
   },
   "dependencies": {
     "@emotion/react": "^11.13.5",
