@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+// Import all components
+import Preloader from './components/Preloader/Preloader';
+import TopBar from './components/TopBar/TopBar';
+import Header from './components/Header/Header';
+import Hero from './components/Hero/Hero';
+import Service from './components/Service/Service';
+import About from './components/About/About';
+import SpecialDish from './components/SpecialDish/SpecialDish';
+import Menu from './components/Menu/Menu';
+import Testimonials from './components/Testimonials/Testimonials';
+import Reservation from './components/Reservation/Reservation';
+import Features from './components/Features/Features';
+import Event from './components/Event/Event';
+import Footer from './components/Footer/Footer';
+import BackToTop from './components/BackToTop/BackToTop';
 
+const App: React.FC = () => {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Preloader />
+      <TopBar />
+      <Header />
+      <Hero />
+      <Service />
+      <About />
+      <SpecialDish />
+      <Menu />
+      <Testimonials />
+      <Reservation />
+      <Features />
+      <Event />
+      <Footer />
+      <BackToTop />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
